@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Problem" (
+    "id" SERIAL NOT NULL,
+    "title" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
+    "votes" INTEGER NOT NULL DEFAULT 0,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Problem_pkey" PRIMARY KEY ("id")
+);
